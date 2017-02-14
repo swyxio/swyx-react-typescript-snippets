@@ -1,6 +1,6 @@
 {
   "name": "vscode-react-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Code snippets for react in typescript",
   "displayName": "Typescript React code snippets",
   "publisher": "infeng",
