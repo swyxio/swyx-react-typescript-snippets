@@ -176,7 +176,7 @@
 	"bind method": {
 		"prefix": "bnd",
 		"body": [
-			"this.${1:} = this.${1:}.bind(this)"
+			"this.${1:} = this.${1:}.bind(this);"
 		],
 		"description": "bind this in method"
 	},
