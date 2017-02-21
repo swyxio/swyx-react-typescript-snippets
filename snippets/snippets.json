@@ -17,7 +17,7 @@
 			"  }",
 			"}",
 			"",
-			"export default ${1:}",
+			"export default ${1:};",
 			""
 		],
 		"description": "Create a React Component with typescript."
@@ -59,7 +59,7 @@
 			"  }",
 			"}",
 			"",
-			"export default ${1:}",
+			"export default ${1:};",
 			""
 		],
 		"description": "Create a React PureComponent."
@@ -213,7 +213,7 @@
 			"  };",
 			"}",
 			"",
-			"export default connect(mapState2Props)(${1:})",
+			"export default connect(mapState2Props)(${1:});",
 			""
 		],
 		"description": "React Redux container"
