@@ -43,6 +43,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `bnd→`   | `binds the this of method inside the constructor` |
 | `met→`   | `simple method` |
 | `tsrrc→` | `react redux container skeleton` |
+| `imt`    |  `create a import` |
 
 ## License
 
