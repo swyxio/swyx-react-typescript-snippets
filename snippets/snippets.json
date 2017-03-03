@@ -88,6 +88,7 @@
 		"body": [
 			"constructor(props) {",
 			"  super(props);",
+			"  ${1:}",
 			"}"
 		],
 		"description": "Add a constructor in class."
@@ -105,9 +106,9 @@
 		"prefix": "ren",
 		"body": [
 			"render() {",
-			  "return (",
-				"  ${1:}",
-				");",
+			"  return (",
+			"    ${1:}",
+			"  );",
 			"}"
 		],
 		"description": "When called, it should examine this.props and this.state and return a single React element."
@@ -124,8 +125,8 @@
 	"componentWillReceiveProps": {
 		"prefix": "cwrp",
 		"body": [
-			"componentWillReceiveProps(nextProps) {",
-			"  ${1:}",
+			"componentWillReceiveProps(nextProps: ${1:}) {",
+			"  ${2:}",
 			"}"
 		],
 		"description": "Invoked before a mounted component receives new props."
@@ -133,8 +134,8 @@
 	"shouldComponentUpdate": {
 		"prefix": "scu",
 		"body": [
-			"shouldComponentUpdate(nextProps, nextState) {",
-			"  ${1:}",
+			"shouldComponentUpdate(nextProps: ${1:}, nextState) {",
+			"  ${2:}",
 			"}"
 		],
 		"description": "Invoked before rendering when new props or state are being received."
@@ -142,8 +143,8 @@
 	"componentWillUpdate": {
 		"prefix": "cwu",
 		"body": [
-			"componentWillUpdate(nextProps, nextState) {",
-			"  ${1:}",
+			"componentWillUpdate(nextProps: ${1:}, nextState) {",
+			"  ${2:}",
 			"}"
 		],
 		"description": "Invoked immediately before rendering when new props or state are being received."
@@ -151,8 +152,8 @@
 	"componentDidUpdate": {
 		"prefix": "cdu",
 		"body": [
-			"componentDidUpdate(prevProps, prevState) {",
-			"  ${1:}",
+			"componentDidUpdate(prevProps: ${1:}, prevState) {",
+			"  ${2:}",
 			"}"
 		],
 		"description": "Invoked immediately after updating occurs. This method is not called for the initial render"
@@ -183,7 +184,7 @@
 	"method": {
 		"prefix": "met",
 		"body": [
-			"${1:methodName}(${2:e}) {",
+			"${1:methodName} = (${2:e}) => {",
 			"  ${3:}",
 			"}"
 		],
