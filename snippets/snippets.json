@@ -92,7 +92,7 @@
 			"export function ${1:} (props: ${1:}Props) {",
 			"    return (",
 			"      <div>",
-			"        ${2:}",
+			"        ${0}",
 			"      </div>",
 			"    );",
 			"}",
