@@ -86,6 +86,8 @@
 	"React Pure Function Component": {
 		"prefix": "tsrpfc",
 		"body": [
+			"import * as React from 'react';",
+			"",
 			"export interface ${1:App}Props {",
 			"}",
 			"",			
