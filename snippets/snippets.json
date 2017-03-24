@@ -107,6 +107,7 @@
 		"body": [
 			"constructor(props) {",
 			"  super(props);",
+			"",
 			"  ${1:}",
 			"}"
 		],
