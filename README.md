@@ -11,7 +11,7 @@ There you have either the option to show the already installed snippets or insta
 
 Launch VS Code Quick Open (Ctrl + P or Cmd + P), paste the following command, and press enter.
 
-ext install vscode-react-typescript
+`ext install vscode-react-typescript`
 
 Alternatively you can open the extensions panel and search for 'Typescript React code snippets'.
 
@@ -30,6 +30,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `tsrcjc→`| `class component skeleton without import and default export lines` |
 | `tsrpcc→`| `class purecomponent skeleton` |
 | `tsrpcjc→` | `class purecomponent without import and default export lines` |
+| `tsrpfc` | `pure function component skeleton` |
 | `conc→`  | `class default constructor with props and context` |
 | `cwm→`   | `componentWillMount method` |
 | `ren→`   | `render method` |

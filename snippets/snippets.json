@@ -83,6 +83,25 @@
 		],
 		"description": "Create a React PureComponent without import and export."
 	},
+	"React Pure Function Component": {
+		"prefix": "tsrpfc",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"export interface ${1:App}Props {",
+			"}",
+			"",			
+			"export function ${1:} (props: ${1:}Props) {",
+			"    return (",
+			"      <div>",
+			"        ${0}",
+			"      </div>",
+			"    );",
+			"}",
+			""
+		],
+		"description": "Create a React Pure Function Component."
+	},
 	"constructor": {
 		"prefix": "conc",
 		"body": [
