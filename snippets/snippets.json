@@ -241,7 +241,7 @@
 	"import": {
 		"prefix": "imt",
 		"body": [
-			"import { $2 } from '$1';"
+			"import $2 from '$1';"
 		],
 		"description": "Create a import"
 	}
