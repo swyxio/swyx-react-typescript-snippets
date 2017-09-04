@@ -7,7 +7,7 @@
 			"export interface ${1:App}Props {",
 			"}",
 			"",
-			"class ${1:} extends React.Component<${1:}Props, any> {",
+			"export default class ${1:} extends React.Component<${1:}Props, any> {",
 			"  render() {",
 			"    return (",
 			"      <div>",
@@ -16,8 +16,6 @@
 			"    );",
 			"  }",
 			"}",
-			"",
-			"export default ${1:};",
 			""
 		],
 		"description": "Create a React Component with typescript."
@@ -49,7 +47,7 @@
 			"export interface ${1:App}Props {",
 			"}",
 			"",
-			"class ${1:} extends React.PureComponent<${1:}Props, any> {",
+			"export default class ${1:} extends React.PureComponent<${1:}Props, any> {",
 			"  render() {",
 			"    return (",
 			"      <div>",
@@ -58,8 +56,6 @@
 			"    );",
 			"  }",
 			"}",
-			"",
-			"export default ${1:};",
 			""
 		],
 		"description": "Create a React PureComponent."
