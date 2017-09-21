@@ -98,6 +98,20 @@
 		],
 		"description": "Create a React Pure Function Component."
 	},
+	"React Stateless Functional Component": {
+		"prefix": "tsrsfc",
+		"body": [
+			"import * React from 'react';",
+			"",
+			"interface ${1:App}Props {$2",
+			"}",
+			"",
+			"const $1: React.SFC<$1Props> = (props) => {",
+			"  return $0;",
+			"};"
+		],
+		"description": "Create a React Stateless Functional Component."
+	},
 	"constructor": {
 		"prefix": "conc",
 		"body": [
