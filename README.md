@@ -44,7 +44,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `sst→`   | `this.setState with object as parameter` |
 | `bnd→`   | `binds the this of method inside the constructor` |
 | `met→`   | `simple method` |
-| `tsrrc→` | `react redux container skeleton` |
+| `tscntr→` | `react redux container skeleton` |
 | `imt`    |  `create a import` |
 
 ## License
