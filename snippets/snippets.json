@@ -101,7 +101,7 @@
 	"React Stateless Functional Component": {
 		"prefix": "tsrsfc",
 		"body": [
-			"import * React from 'react';",
+			"import * as React from 'react';",
 			"",
 			"interface ${1:App}Props {$2",
 			"}",
