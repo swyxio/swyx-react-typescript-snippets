@@ -27,6 +27,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | Trigger  | Content |
 | -------: | ------- |
 | `tsrcc→` | `class component skeleton` |
+| `tsrcfull→` | `class component skeleton with Props, State, and constructor` |
 | `tsrcjc→`| `class component skeleton without import and default export lines` |
 | `tsrpcc→`| `class purecomponent skeleton` |
 | `tsrpcjc→` | `class purecomponent without import and default export lines` |
