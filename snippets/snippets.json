@@ -33,7 +33,7 @@
 			"",
 			"export default class ${1:} extends React.Component<${1:}Props, ${1:}State> {",
 			"  constructor(props: ${1:}Props) {",
-			"    super();",
+			"    super(props);",
 			"",
 			"        this.state = {",
 			"    }",
