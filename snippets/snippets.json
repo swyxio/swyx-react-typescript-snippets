@@ -140,6 +140,8 @@
 			"const $1: React.SFC<$1Props> = (props) => {",
 			"  return $0;",
 			"};"
+			""
+			"export default $1;"
 		],
 		"description": "Create a React Stateless Functional Component."
 	},
