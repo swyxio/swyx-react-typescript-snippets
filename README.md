@@ -42,6 +42,8 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `cwu→`  | `componentWillUpdate method` |
 | `cdu→`  | `componentDidUpdate method` |
 | `cwum→`  | `componentWillUnmount method` |
+| `gdsfp→` | `getDerivedStateFromProps method` |
+| `gsbu` | `getSnapshotBeforeUpdate method` |
 | `sst→`   | `this.setState with object as parameter` |
 | `bnd→`   | `binds the this of method inside the constructor` |
 | `met→`   | `simple method` |

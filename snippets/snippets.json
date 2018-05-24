@@ -139,8 +139,8 @@
 			"",
 			"const $1: React.SFC<$1Props> = (props) => {",
 			"  return $0;",
-			"};"
-			""
+			"};",
+			"",
 			"export default $1;"
 		],
 		"description": "Create a React Stateless Functional Component."
@@ -287,5 +287,23 @@
 			"import { $2 } from '$1';"
 		],
 		"description": "Create a import"
+	},
+	"getDerivedStateFromProps": {
+		"prefix": "gdsfp",
+		"body": [
+			"static getDerivedStateFromProps(nextProps: ${1:any}, prevState: ${2:any}) {",
+			"  ${0}",
+			"}"
+		],
+		"description": "Invoked right before calling the render method, both on the initial mount and on subsequent updates"
+	},
+	"getSnapshotBeforeUpdate": {
+		"prefix": "gsbu",
+		"body": [
+			"static getSnapshotBeforeUpdate(prevProps: ${1:any}, prevState: ${2:any}) {",
+			"  ${0}",
+			"}"
+		],
+		"description": "Invoked right before the most recently rendered output is committed to e.g. the DOM"
 	}
 }
