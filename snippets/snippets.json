@@ -300,7 +300,7 @@
 	"getSnapshotBeforeUpdate": {
 		"prefix": "gsbu",
 		"body": [
-			"static getSnapshotBeforeUpdate(prevProps: ${1:any}, prevState: ${2:any}) {",
+			"getSnapshotBeforeUpdate(prevProps: ${1:any}, prevState: ${2:any}) {",
 			"  ${0}",
 			"}"
 		],
