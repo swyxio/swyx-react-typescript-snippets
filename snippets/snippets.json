@@ -1,4 +1,12 @@
 {
+  "import react and styled components": {
+    "prefix": "imrsc",
+    "body": [
+      "import React from 'react'",
+      "import styled from 'styled-components'"
+    ],
+    "description": "import react and styled components"
+  },
   "React Function Component": {
     "prefix": "rfc",
     "body": [

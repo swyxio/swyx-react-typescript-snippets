@@ -8,6 +8,8 @@ It contains no class component APIs, assumes you use synthetic default imports, 
 
 It does a bit more based on the principle that it is easier to delete than to type, and so that we have just 3 easy to remember snippets: `rfc`, `rhc`, `rsc`.
 
+Because [the popular styled components snippets extension](https://github.com/lXSPandora/vscode-styled-components-snippets) only works for javascript 🙄, we also include an import snippet `imrsc`.
+
 ## Installation
 
 In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
@@ -28,14 +30,23 @@ Alternatively you can open the extensions panel and search for 'swyx-react-types
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
-| Trigger | Content                                        |
-| ------: | ---------------------------------------------- |
-|  `rfc→` | `create a react function component (no hooks)` |
-|  `rhc→` | `create a react hooks component`               |
-|  `rsc→` | `create a react styeld component (no hooks)`   |
+|  Trigger | Content                                        |
+| -------: | ---------------------------------------------- |
+|   `rfc→` | `create a react function component (no hooks)` |
+|   `rhc→` | `create a react hooks component`               |
+|   `rsc→` | `create a react styled component (no hooks)`   |
+| `imrsc→` | `import react and styled component`            |
 
 ```json
 {
+  "import react and styled components": {
+    "prefix": "imrsc",
+    "body": [
+      "import React from 'react'",
+      "import styled from 'styled-components'"
+    ],
+    "description": "import react and styled components"
+  },
   "React Function Component": {
     "prefix": "rfc",
     "body": [
