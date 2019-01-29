@@ -10,6 +10,10 @@ It does a bit more based on the principle that it is easier to delete than to ty
 
 Because [the popular styled components snippets extension](https://github.com/lXSPandora/vscode-styled-components-snippets) only works for javascript 🙄, we also include an import snippet `imrsc`.
 
+## Demo
+
+![swyxsnippets](https://user-images.githubusercontent.com/6764957/51881079-e5ec4080-231d-11e9-81ae-ecaa3624c270.gif)
+
 ## Installation
 
 In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
