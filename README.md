@@ -2,9 +2,11 @@
 
 ---
 
-This extension contains code snippets for React with Typescript. It is a fork of https://github.com/infeng/vscode-react-typescript made by swyx.
+This extension contains code snippets for React with Typescript (optionally, with Styled-Components). It is a fork of https://github.com/infeng/vscode-react-typescript made by swyx.
 
 It contains no class component APIs, assumes you use synthetic default imports, has hooks and subjectively better prop scaffolding.
+
+It does a bit more based on the principle that it is easier to delete than to type, and so that we have just 3 easy to remember snippets.
 
 ## Installation
 
