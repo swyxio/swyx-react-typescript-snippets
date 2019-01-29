@@ -83,7 +83,7 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
     "prefix": "rsc",
     "body": [
       "const StyledDiv = styled('div')`",
-      "  border: 1px solid red",
+      "  border: 3px solid red;",
       "`",
       "export type $1Props = { $2: $3 }",
       "export const $1: React.FC<$1Props> = ({ $2 }) => {",
