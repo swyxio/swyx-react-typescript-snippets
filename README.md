@@ -1,8 +1,10 @@
-# vscode-react-typescript
+# swyx-react-typescript-snippets
 
--------------------
+---
 
-This extension contains code snippets for React with Typescript.
+This extension contains code snippets for React with Typescript. It is a fork of https://github.com/infeng/vscode-react-typescript made by swyx.
+
+It contains no class component APIs, assumes you use synthetic default imports, has hooks and subjectively better prop scaffolding.
 
 ## Installation
 
@@ -11,44 +13,84 @@ There you have either the option to show the already installed snippets or insta
 
 Launch VS Code Quick Open (Ctrl + P or Cmd + P), paste the following command, and press enter.
 
-`ext install vscode-react-typescript`
+`ext install swyx-react-typescript-snippets`
 
-Alternatively you can open the extensions panel and search for 'Typescript React code snippets'.
+Alternatively you can open the extensions panel and search for 'swyx-react-typescript-snippets'.
 
 ## Supported languages (file extensions)
 
-* TypeScript (.ts)
-* TypeScript React (.tsx)
+- TypeScript (.ts)
+- TypeScript React (.tsx)
 
 ## Snippets
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
-| Trigger  | Content |
-| -------: | ------- |
-| `tsrcc→` | `class component skeleton` |
-| `tsrcfull→` | `class component skeleton with Props, State, and constructor` |
-| `tsrcjc→`| `class component skeleton without import and default export lines` |
-| `tsrpcc→`| `class purecomponent skeleton` |
-| `tsrpcjc→` | `class purecomponent without import and default export lines` |
-| `tsrpfc` | `pure function component skeleton` |
-| `tsrsfc` | `stateless functional component` |
-| `conc→`  | `class default constructor with props and context` |
-| `cwm→`   | `componentWillMount method` |
-| `ren→`   | `render method` |
-| `cdm→`   | `componentDidMount method` |
-| `cwrp→`   | `componentWillReceiveProps method` |
-| `scu→`   | `shouldComponentUpdate method` |
-| `cwu→`  | `componentWillUpdate method` |
-| `cdu→`  | `componentDidUpdate method` |
-| `cwum→`  | `componentWillUnmount method` |
-| `gdsfp→` | `getDerivedStateFromProps method` |
-| `gsbu` | `getSnapshotBeforeUpdate method` |
-| `sst→`   | `this.setState with object as parameter` |
-| `bnd→`   | `binds the this of method inside the constructor` |
-| `met→`   | `simple method` |
-| `tscntr→` | `react redux container skeleton` |
-| `imt`    |  `create a import` |
+| Trigger | Content                                        |
+| ------: | ---------------------------------------------- |
+|  `rfc→` | `create a react function component (no hooks)` |
+|  `rhc→` | `create a react hooks component`               |
+|  `rsc→` | `create a react styeld component (no hooks)`   |
+
+```json
+{
+  "React Function Component": {
+    "prefix": "rfc",
+    "body": [
+      "export type ${1:IApp}Props = {$2",
+      "}",
+      "",
+      "const $1: React.FC<$1Props> = ({ children }) => {",
+      "    return (",
+      "        ${0}",
+      "    )",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Create a React Function Component"
+  },
+  "React Hooks Component": {
+    "prefix": "rhc",
+    "body": [
+      "export type ${1:IApp}Props = {$2",
+      "}",
+      "",
+      "const $1: React.FC<$1Props> = ({ children }) => {",
+      "    const [${3}, set${3/(.*)/${3:/capitalize}/}] = React.useState($4);",
+      "    React.useEffect(() => {}, [])",
+      "    return (",
+      "        ${0}",
+      "    )",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Create a React Hooks Component."
+  },
+  "React Styled Component": {
+    "prefix": "rsc",
+    "body": [
+      "const StyledDiv = styled('div')`",
+      "  border: 1px solid red",
+      "`",
+      "export type ${1:IApp}Props = {$2",
+      "}",
+      "",
+      "const $1: React.FC<$1Props> = ({ children }) => {",
+      "    return (",
+      "        <StyledDiv>",
+      "            ${0}",
+      "        </StyledDiv>",
+      "    )",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Create a Styled React Component."
+  }
+}
+```
 
 ## License
 

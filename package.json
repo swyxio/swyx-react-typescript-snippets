@@ -1,16 +1,16 @@
 {
-  "name": "vscode-react-typescript",
-  "version": "1.0.17",
-  "description": "Code snippets for react in typescript",
-  "displayName": "Typescript React code snippets",
-  "publisher": "infeng",
+  "name": "swyx-react-typescript-snippets",
+  "version": "1.0.0",
+  "description": "Code snippets for modern react in typescript",
+  "displayName": "swyx-react-typescript-snippets",
+  "publisher": "swyx",
   "icon": "images/react.png",
   "galleryBanner": {
     "theme": "light"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infeng/vscode-react-typescript.git"
+    "url": "git+https://github.com/sw-yx/swyx-react-typescript-snippets.git"
   },
   "engines": {
     "vscode": "0.10.x"
@@ -27,9 +27,9 @@
   "author": "infeng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/infeng/vscode-react-typescript/issues"
+    "url": "https://github.com/sw-yx/swyx-react-typescript-snippets/issues"
   },
-  "homepage": "https://github.com/infeng/vscode-react-typescript#readme",
+  "homepage": "https://github.com/sw-yx/swyx-react-typescript-snippets#readme",
   "contributes": {
     "snippets": [
       {
