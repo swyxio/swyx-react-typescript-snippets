@@ -10,6 +10,10 @@ It does a bit more based on the principle that it is easier to delete than to ty
 
 Because [the popular styled components snippets extension](https://github.com/lXSPandora/vscode-styled-components-snippets) only works for javascript 🙄, we also include an import snippet `imrsc`.
 
+## Install
+
+Search "swyx" in Extensions or hit https://marketplace.visualstudio.com/items?itemName=swyx.swyx-react-typescript-snippets
+
 ## Demo
 
 ![swyxsnippets](https://user-images.githubusercontent.com/6764957/51881079-e5ec4080-231d-11e9-81ae-ecaa3624c270.gif)
