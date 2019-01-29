@@ -6,7 +6,7 @@ This extension contains code snippets for React with Typescript (optionally, wit
 
 It contains no class component APIs, assumes you use synthetic default imports, has hooks and subjectively better prop scaffolding.
 
-It does a bit more based on the principle that it is easier to delete than to type, and so that we have just 3 easy to remember snippets.
+It does a bit more based on the principle that it is easier to delete than to type, and so that we have just 3 easy to remember snippets: `rfc`, `rhc`, `rsc`.
 
 ## Installation
 
@@ -39,12 +39,11 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
   "React Function Component": {
     "prefix": "rfc",
     "body": [
-      "export type ${1:IApp}Props = {$2",
-      "}",
-      "",
-      "const $1: React.FC<$1Props> = ({ children }) => {",
+      "export type $1Props = { $2: $3 }",
+      "export const $1: React.FC<$1Props> = ({ $2 }) => {",
+      "    console.log({ $2 })",
       "    return (",
-      "        ${0}",
+      "        $0",
       "    )",
       "};",
       "",
@@ -55,11 +54,10 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
   "React Hooks Component": {
     "prefix": "rhc",
     "body": [
-      "export type ${1:IApp}Props = {$2",
-      "}",
-      "",
-      "const $1: React.FC<$1Props> = ({ children }) => {",
-      "    const [${3}, set${3/(.*)/${3:/capitalize}/}] = React.useState($4);",
+      "export type $1Props = { $2: $3 }",
+      "export const $1: React.FC<$1Props> = ({ $2 }) => {",
+      "    console.log({ $2 })",
+      "    const [${4}, set${4/(.*)/${4:/capitalize}/}] = React.useState($5);",
       "    React.useEffect(() => {}, [])",
       "    return (",
       "        ${0}",
@@ -76,10 +74,11 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
       "const StyledDiv = styled('div')`",
       "  border: 1px solid red",
       "`",
-      "export type ${1:IApp}Props = {$2",
-      "}",
-      "",
-      "const $1: React.FC<$1Props> = ({ children }) => {",
+      "export type $1Props = { $2: $3 }",
+      "export const $1: React.FC<$1Props> = ({ $2 }) => {",
+      "    console.log({ $2 })",
+      "    const [${4}, set${4/(.*)/${4:/capitalize}/}] = React.useState($5);",
+      "    React.useEffect(() => {}, [])",
       "    return (",
       "        <StyledDiv>",
       "            ${0}",
@@ -93,6 +92,10 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
   }
 }
 ```
+
+## Publishing
+
+`vsce package`
 
 ## License
 
